@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/AccountListFragment">
+
+    <fragment
+        android:id="@+id/AccountListFragment"
+        android:name="com.example.moneytreeapp.ui.AccountListFragment"
+        android:label="@string/account_list"
+        tools:layout="@layout/account_list_fragment">
+
+        <action
+            android:id="@+id/action_account_to_transaction"
+            app:destination="@id/TransactionListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TransactionListFragment"
+        android:name="com.example.moneytreeapp.ui.TransactionListFragment"
+        tools:layout="@layout/transaction_list_fragment">
+
+        <action
+            android:id="@+id/action_transaction_to_account_list"
+            app:destination="@id/AccountListFragment" />
+    </fragment>
+</navigation>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MoneyTreeApp</string>
+    <string name="account_list">Account List</string>
+    <string name="transaction_list">Transaction List</string>
 </resources>
